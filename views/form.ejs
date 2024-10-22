@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %></title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1><%= title %></h1>
+        <form method="POST" action="/new" class="message-form">
+
+            <label for="messageUser">Name: </label>
+            <input type="text" id="messageUser" name="messageUser" required>
+
+            <label for="messageText">Message: </label>
+            <input type="text" id="messageText" name="messageText" required>
+
+            <button type="submit" class="submit-btn">Submit</button>
+        </form>
+    </div>
+    
+</body>
+</html>

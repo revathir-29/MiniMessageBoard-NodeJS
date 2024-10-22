@@ -1,0 +1,190 @@
+:root {
+    --primary-color: #b272ff;
+    --primary-color-hover: #b145f9;
+    --secondary-color: #ffffff;
+    --text-color: #333;
+    --border-color: #ddd;
+    --font-family: Arial, sans-serif;
+    --button-radius: 5px;
+    --button-padding: 10px;
+    --max-container-width: 700px;
+  }
+  
+  /* General body styling */
+  body {
+    font-family: var(--font-family);
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Container styling for central alignment and max width */
+  .container {
+    max-width: var(--max-container-width);
+    margin: 0 auto;
+    margin-top: 60px;
+    padding: 20px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Centering header and giving a dark text color */
+  h1 {
+    text-align: center;
+    color: var(--text-color);
+  }
+  
+  /* Messages container with spacing and padding */
+  .messages {
+    padding: 10px;
+    margin-bottom: 40px;
+  }
+  
+  /* Individual message block styling */
+  .message {
+    /* background-color: var(--secondary-color); */
+    border-radius: 15px;
+    padding: 30px;
+    margin: 10px 0;
+    position: relative;
+    max-width: 90%;
+    box-shadow: 5px 5px 60px 20px rgb(230, 205, 247) inset;
+  }
+  
+  /* Styling the text inside messages */
+  .message p {
+    margin: 10px 0;
+    font-size: large;
+  }
+  
+  /* User's name in bold, primary color */
+  .message strong {
+    color: var(--primary-color);
+    font-size: 20px;
+  }
+  
+  /* Message timestamp styling */
+  .message small {
+    display: block;
+    color: #565555;
+    font-size: 14px;
+  }
+  
+  /* Message actions for edit and delete */
+  .message-actions {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 10px;
+  }
+  
+  /* Styling the edit link */
+  .open-message {
+    border-radius: 5px;
+    color: rgb(13, 13, 13);
+    padding: 14px 28px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 17px;
+    width: 50px;
+    border: 1px solid;
+    box-shadow: 5px 5px 20px 10px rgb(173, 53, 253) inset;
+  }
+  
+  /* Styling delete button */
+  .delete-btn {
+    /* background-color: crimson; */
+    border-radius: 5px;
+    color: rgb(13, 13, 13);
+    padding: 13px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 17px;
+    width: 100px;
+    border: 1px solid;
+    box-shadow: 5px 5px 20px 10px rgb(252, 58, 74) inset;
+  }
+  
+  /* Hover effects for the buttons */
+  .delete-btn:hover {
+    background-color: rgb(255, 96, 128);
+    color: white;
+  }
+  .open-message:hover {
+    background-color: rgb(193, 119, 254);
+    color: white;
+  }
+  
+  /* Add new message button container with centered text */
+  .new-message-link-container {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  /* Button for adding a new message */
+  .new-message-link {
+    display: inline-block;
+    text-align: center;
+    background-color: var(--primary-color);
+    color: black;
+    padding: var(--button-padding);
+    text-decoration: none;
+    border-radius: var(--button-radius);
+  }
+  
+  /* Hover effect for the new message button */
+  .new-message-link:hover {
+    background-color: var(--primary-color-hover);
+  }
+  
+  /* Form styling for adding and editing messages */
+  .message-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Label styling with margin for separation */
+  .message-form label {
+    margin-top: 10px;
+    color: var(--text-color);
+    font-size: large;
+  }
+  
+  /* Input field styling */
+  .message-form input {
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: var(--button-radius);
+    border: 1px solid var(--border-color);
+    font-size: 18px;
+  }
+  
+  /* Shared styling for form buttons (Send/Save) */
+  .submit-btn {
+    margin-top: 20px;
+    padding: var(--button-padding);
+    background-color: var(--primary-color);
+    color: black;
+    border: none;
+    border-radius: var(--button-radius);
+    cursor: pointer;
+    font-size: 18px;
+    text-align: center;
+  }
+  
+  /* Hover effect for form buttons */
+  .submit-btn:hover {
+    background-color: var(--primary-color-hover);
+  }
+  
+  /* Mobile responsiveness for message width and container padding */
+  @media (max-width: 600px) {
+    .message {
+      max-width: 100%;
+    }
+  
+    .container {
+      padding: 10px;
+    }
+  }
